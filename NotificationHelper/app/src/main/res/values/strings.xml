@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NotificationHelper</string>
+
+    <string name="notification_title_1">Notification Title 1</string>
+    <string name="notification_title_2">Notification Title 2</string>
+    <string name="notification_title_3">Notification Title 3</string>
+    <string name="notification_title_4">Notification Title 4</string>
+    <string name="notification_title_default">Notification Title Default</string>
+</resources>

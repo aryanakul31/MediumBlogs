@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "530249426533",
+    "project_id": "mediumblogs-ef03a",
+    "storage_bucket": "mediumblogs-ef03a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530249426533:android:02d81ad6a98c1088db488c",
+        "android_client_info": {
+          "package_name": "com.nakul.medium"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIuPFiHDNPM5TfP-cQZNo4ghnwVkbgfCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
