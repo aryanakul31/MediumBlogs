@@ -17,6 +17,7 @@ import com.google.firebase.messaging.FirebaseMessaging
 import com.google.firebase.messaging.RemoteMessage
 import com.nakul.medium.MainActivity
 import com.nakul.medium.R
+import kotlin.random.Random
 
 object NotificationHelper {
 
@@ -96,6 +97,12 @@ object NotificationHelper {
         }
 
         notificationManager.createNotificationChannel(mChannel)
-        notificationManager.notify(notificationType.notificationId, builder.build())
+        notificationManager.notify(Random.nextInt(5_000), builder.build())
+    }
+
+    fun clearAllNotifications(context: Context) {
+        val notificationManager =
+            context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        notificationManager.cancelAll()
     }
 }
