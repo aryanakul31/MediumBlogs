@@ -97,12 +97,16 @@ object NotificationHelper {
         }
 
         notificationManager.createNotificationChannel(mChannel)
-        notificationManager.notify(Random.nextInt(5_000), builder.build())
+        val notificationId = Random.nextInt(5_000)
+        notificationManager.notify(notificationId, builder.build())
     }
 
-    fun clearAllNotifications(context: Context) {
+    fun clearNotification(context: Context, notificationId: Int? = null) {
         val notificationManager =
             context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-        notificationManager.cancelAll()
+        if (notificationId != null)
+            notificationManager.cancel(notificationId)
+        else
+            notificationManager.cancelAll()
     }
 }
